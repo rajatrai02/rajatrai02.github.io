@@ -1,0 +1,148 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+		<title> 
+			FOOD ORDER
+		</title> 
+		<link rel="stylesheet" type="text/css"href="basic.css">
+	</head> 
+	
+	<body> 
+		
+		<!-- header of website layout -->
+		<div class = "header"> 
+			<h2 style = "color:BLACK;font-size:200%"> 
+				FOOD AT DOORSTEP
+			</h2> 
+		</div> 
+		
+		<!-- nevigation menu of website layout -->
+		<div class = "nav_menu"> 
+		<button class="dropbtn">ORDER NOW</button>
+            <div class="dropdown-content">
+			<button class="open-button" onclick="openForm()">
+      <strong>Open Form</strong>
+      </button>
+		</div> 
+		</div>
+		<div id="loginPopup">
+      <div class="form-popup" id="popupForm">
+        <form action="/action_page.php" class="form-container">
+          <h2>place order now</h2>
+          <label for="email">
+          <strong>E-mail</strong>
+          </label>
+          <input type="text" id="email" placeholder="Your Email" name="email" required>
+          <label for="psw">
+          <strong>Password</strong>
+          </label>
+          <input type="password" id="psw" placeholder="Your Password" name="psw" required>
+		  <label for="FirstName">
+		  <strong>First Name</strong>
+		  </label>
+		  <input type="text" name="FirstName" required><br> 
+		  <label for="LastName">
+		  <strong>Last Name</strong>
+		  </label>
+		  <input type="text" name="LastName" required><br> 
+		  <label for="address">
+		  <strong>Address</strong>
+		  </label>
+		  <input type="text" name="Address" required><br>
+          <label for="ZipCode">
+          <strong>Zip Code</strong>
+          </label>
+          <input type="tel" pattern="[0-9]{6}" placeholder="6 digit Zip Code" />		  
+		  <label for="VegThali">
+		  <strong>Veg Thali</strong>
+		  </label>
+		  <input type="checkbox" id="select" name="VegThali" required><br>
+          <label for="Quantity">
+		  <strong>Veg Thali Quantity</strong>
+		  </label>
+		  <input type="number" name="Quantity"max="10" min="0"  required><br>
+          <input type="radio" name="VegThali" value="small"checked>small<input type="radio" name="VegThali" value="medium"checked>medium<input type="radio" name="VegThali" value="large"checked>large<br>
+		  <label for="NonVegThali">
+          <strong>Non Veg Thali</strong>
+		  </label>
+		  <input type="checkbox" id="select" name="NonVegThali" required><br>
+          <label for="Quantity">
+		  <strong>Non-Veg Thali Quantity</strong>
+		  </label>
+		  <input type="number" name="Quantity"max="10" min="0"  required><br>
+          <input type="radio" name="NonVegThali" value="small"checked>small<input type="radio" name="NonVegThali" value="medium"checked>medium<input type="radio" name="NonVegThali" value="large"checked>large<br>		  
+		  <label for="IceCream">
+          <strong>IceCream</strong>
+		  </label>
+		  <input type="checkbox" id="select" name="IceCream" required><br>
+          <label for="Quantity">
+		  <strong>IceCream Quantity</strong>
+		  </label>
+		  <input type="number" name="Quantity"max="10" min="0"  required><br>
+          <input type="radio" name="IceCream" value="small"checked>small<input type="radio" name="IceCream" value="medium"checked>medium<input type="radio" name="IceCream" value="large"checked>large<br>		  
+		  
+          <button type="submit" class="btn">place order</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+      </div>
+    </div>
+	<script>
+      function openForm() {
+        document.getElementById("loginPopup").style.display="block";
+      }
+      
+      function closeForm() {
+        document.getElementById("loginPopup").style.display= "none";
+      }
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+        var modal = document.getElementById('loginPopup');
+        if (event.target == modal) {
+          closeForm();
+        }
+      }
+	  
+      
+    </script>
+		
+		
+		<!-- Content section of website layout -->
+		<div class = "row"> 
+			
+			<div class = "columnA"> 
+				<h2>VEG THALI</h2> 
+				<p><img style="height:150px;width:50%;" src="https://5.imimg.com/data5/HW/II/SH/SELLER-9770898/veg-thali-500x500.jpg"/><br>
+				small-Rs. 150/<br>
+				medium-Rs.250/<br>
+				Large-Rs.350/<br>
+                </p> 
+			</div> 
+			
+			<div class = "columnB"> 
+				<h2>NON VEG THALI</h2> 
+				<p>
+				<img style="height:150px;width:50%;" src="https://picknmove.ca/wp-content/uploads/2019/10/Non-Veggie-Thali-2.jpg"/><br>
+				small-Rs. 250/<br>
+				medium-Rs.350/<br>
+				Large-Rs.450/<br>
+				</p>
+			</div>  
+			
+			<div class = "columnC"> 
+				<h2>ICE CREAM</h2> 
+				<p><img style="height:150px;width:50%;" src="https://www.thespruceeats.com/thmb/cH6kS6JA_Wo5rbzUIone1k3akzI=/999x999/smart/filters:no_upscale()/easy-chocolate-ice-cream-recipe-1945798-6_preview-5b16c882ff1b780036a4e1a2.jpeg"/><br>
+				small-Rs. 50/<br>
+				medium-Rs.150/<br>
+				Large-Rs.250/<br>
+				</p> 
+			</div> 
+		</div> 
+          
+        <!-- footer Section -->
+        <div class = "footer"> 
+		    <a href="#">About us</a><br>
+			
+            <a href="#">contact us</a><br>
+			</div> 
+	</body> 
+</html>					 			 
