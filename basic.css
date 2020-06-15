@@ -1,7 +1,6 @@
-<style> 
-			* { 
+ 
 				box-sizing: border-box; 
-			} 
+			
 			
 			/* CSS property for header section */ 
 			.header { 
@@ -151,5 +150,4 @@
       /* Style cancel button */
       .form-container .cancel {
       background-color: #cc0000;
-      }
-		</style> 
+      } 
