@@ -1,6 +1,7 @@
- 
+ <script>
+          *{
 				box-sizing: border-box; 
-			
+}	
 			
 			/* CSS property for header section */ 
 			.header { 
@@ -151,3 +152,4 @@
       .form-container .cancel {
       background-color: #cc0000;
       } 
+</script>
